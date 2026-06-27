@@ -1,0 +1,13 @@
+@import "./styles/variables.css";
+@import "./styles/reset.css";
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-width: 1440px;
+  font-family: var(--font-family);
+  color: var(--text);
+  background-color: var(--page-bg);
+}

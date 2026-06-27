@@ -1,0 +1,11 @@
+:root {
+    --font-family: "Inter", sans-serif;
+    --text: #191a15;
+    --rating: #ffc531;
+    --page-bg: #fbfbfb;
+    --orange: #fc832c;
+    --orange-hover: #f37113;
+    --avatar-bg: rgba(252, 131, 44, 0.2);
+    --active: #38cd3e;
+    --favorites-page-bg: #f3f3f3;
+}
