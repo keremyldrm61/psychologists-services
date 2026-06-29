@@ -1,0 +1,189 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    position: relative;
+    z-index: 100;
+}
+
+.logo {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    color: var(--color-primary);
+    z-index: 101;
+}
+
+.logo span {
+    color: var(--color-text);
+}
+
+.toggleButton {
+    display: none;
+    background: transparent;
+    border: none;
+    color: var(--color-text);
+    cursor: pointer;
+    z-index: 101;
+    padding: 8px;
+}
+
+.menuContainer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-grow: 1;
+    margin-left: 0;
+}
+
+.authContainer {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.loginButton {
+    background: transparent;
+    border: 1px solid var(--color-text);
+    opacity: 0.5;
+    border-radius: 30px;
+    padding: 14px 39px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: -0.01em;
+    color: var(--color-text);
+    transition:
+        background-color var(--transition),
+        border-color var(--transition);
+}
+
+.loginButton:hover {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    border-color: var(--color-primary);
+    opacity: 1;
+}
+
+.registerButton {
+    background-color: var(--color-primary);
+    border: 1px solid var(--color-primary);
+    border-radius: 30px;
+    padding: 14px 40px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: -0.01em;
+    color: var(--color-white);
+    transition: background-color var(--transition);
+}
+
+.registerButton:hover {
+    background-color: var(--color-primary-hover);
+    border-color: var(--color-primary-hover);
+}
+
+.userContainer {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+}
+
+.userInfo {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.userAvatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: var(--color-secondary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-primary);
+}
+
+.userName {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: -0.01em;
+    color: var(--color-text);
+}
+
+.logoutButton {
+    background: transparent;
+    border: 1px solid var(--color-text);
+    opacity: 0.5;
+    border-radius: 30px;
+    padding: 14px 39px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: -0.01em;
+    color: var(--color-text);
+    transition:
+        background-color var(--transition),
+        border-color var(--transition);
+}
+
+.logoutButton:hover {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    border-color: var(--color-primary);
+    opacity: 1;
+}
+
+@media screen and (max-width: 960px) {
+    .toggleButton {
+        display: block;
+        margin-left: auto;
+    }
+
+    .menuContainer {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: var(--color-background);
+        flex-direction: column;
+        justify-content: center;
+        gap: 40px;
+        margin-left: 0;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in-out;
+        z-index: 50;
+        padding: 20px;
+    }
+
+    .menuContainer.mobileMenuOpen {
+        transform: translateX(0);
+        box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .authContainer {
+        flex-direction: column;
+        margin-left: 0;
+        gap: 16px;
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .userContainer {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .loginButton,
+    .registerButton,
+    .logoutButton {
+        width: 100%;
+        text-align: center;
+    }
+}

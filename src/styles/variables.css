@@ -1,11 +1,23 @@
 :root {
-    --font-family: "Inter", sans-serif;
-    --text: #191a15;
-    --rating: #ffc531;
-    --page-bg: #fbfbfb;
-    --orange: #fc832c;
-    --orange-hover: #f37113;
-    --avatar-bg: rgba(252, 131, 44, 0.2);
-    --active: #38cd3e;
-    --favorites-page-bg: #f3f3f3;
+  --font-family: "Inter", sans-serif;
+  --transition: 0.3s ease;
+  --color-border: rgba(25, 26, 21, 0.1);
+  --color-text: #191a15;
+  --color-background: #f3f3f3;
+  --color-white: #fbfbfb;
+}
+
+[data-theme="green"] {
+  --color-primary: #54be96;
+  --color-primary-hover: #36a379;
+}
+
+[data-theme="blue"] {
+  --color-primary: #3470FF;
+  --color-primary-hover: #255EE8;
+}
+
+[data-theme="orange"] {
+  --color-primary: #fc832c;
+  --color-primary-hover: #f37113;
 }

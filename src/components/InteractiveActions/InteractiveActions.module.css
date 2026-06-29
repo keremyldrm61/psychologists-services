@@ -1,0 +1,17 @@
+.container {
+    position: fixed;
+    right: 40px;
+    bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+    z-index: 1000;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        right: 20px;
+        bottom: 20px;
+    }
+}

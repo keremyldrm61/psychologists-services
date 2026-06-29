@@ -1,0 +1,218 @@
+.heroSection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+    padding: 80px 0;
+}
+
+.content {
+    max-width: 600px;
+}
+
+.title {
+    font-weight: 600;
+    font-size: 80px;
+    line-height: 1.02;
+    letter-spacing: -0.02em;
+    color: var(--color-text);
+    margin-bottom: 20px;
+}
+
+.italicAccent {
+    font-style: italic;
+    color: var(--color-primary);
+}
+
+.description {
+    max-width: 510px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.33;
+    letter-spacing: -0.02em;
+    color: var(--color-text);
+    margin-bottom: 40px;
+}
+
+.psychologistLinkButton {
+    display: inline-flex;
+    align-items: center;
+    gap: 18px;
+    background-color: var(--color-primary);
+    border-radius: 30px;
+    padding: 18px 50px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+    color: var(--color-white);
+    transition: background-color 0.3s ease;
+}
+
+.psychologistLinkButton:hover {
+    background-color: var(--color-primary-hover);
+}
+
+.imageContainer {
+    position: relative;
+    width: 464px;
+    border-radius: 30px;
+    aspect-ratio: 464 / 526;
+    flex-shrink: 0;
+}
+
+.heroImage {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.avatar {
+    position: absolute;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.usersIcon {
+    width: 48px;
+    height: 48px;
+    top: 40px;
+    right: -36px;
+    background-color: #fbc75e;
+    color: var(--color-white);
+    transform: rotate(15deg);
+}
+
+.questionIcon {
+    width: 40px;
+    height: 40px;
+    top: 200px;
+    left: -36px;
+    background-color: #54be96;
+    color: var(--color-white);
+    transform: rotate(-15deg);
+}
+
+.experienceCheck {
+    min-width: 200px;
+    bottom: 40px;
+    left: -60px;
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 16px;
+    padding: 32px;
+}
+
+.checkIconWrapper {
+    width: 54px;
+    height: 54px;
+    background-color: var(--color-white);
+    color: var(--color-primary);
+    border-radius: 13px;
+    display: flex;
+    flex-shrink: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.experienceText {
+    font-weight: 400;
+    font-size: 14px;
+    color: rgba(251, 251, 251, 0.5);
+}
+
+.experienceCount {
+    font-weight: 700;
+    font-size: 24px;
+    color: var(--color-white);
+}
+
+@media screen and (max-width: 1200px) {
+    .title {
+        font-size: 54px;
+    }
+
+    .heroImage {
+        width: 100%;
+        max-width: 380px;
+        height: auto;
+    }
+
+    .experienceCheck {
+        left: -30px;
+        bottom: 150px;
+        padding: 20px;
+    }
+
+    .questionIcon {
+        top: 136px;
+        left: -20px;
+    }
+
+    .usersIcon {
+        right: 45px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .heroSection {
+        flex-direction: column-reverse;
+        padding: 40px 0;
+        text-align: center;
+        gap: 60px;
+    }
+
+    .content {
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .title {
+        font-size: 48px;
+    }
+
+    .description {
+        margin: 0 auto 40px;
+    }
+
+    .imageContainer {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .experienceCheck {
+        width: 74%;
+        height: 24%;
+        left: 48%;
+        bottom: -30px;
+        transform: translateX(-50%);
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .title {
+        font-size: 36px;
+    }
+
+    .psychologistLinkButton {
+        width: 100%;
+        font-size: 18px;
+        justify-content: center;
+        padding: 16px 20px;
+    }
+
+    .experienceCheck {
+        width: 90%;
+        height: 26%;
+    }
+}
