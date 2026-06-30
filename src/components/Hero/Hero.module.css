@@ -197,6 +197,10 @@
         bottom: -30px;
         transform: translateX(-50%);
     }
+
+    .usersIcon {
+        right: -18px;
+    }
 }
 
 @media screen and (max-width: 320px) {
@@ -214,5 +218,13 @@
     .experienceCheck {
         width: 90%;
         height: 26%;
+    }
+
+    .usersIcon {
+        right: 0px;
+    }
+
+    .questionIcon {
+        left: 0px;
     }
 }

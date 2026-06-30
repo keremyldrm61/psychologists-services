@@ -1,3 +1,5 @@
+import type { PSYCHOLOGIST_FILTERS } from "../utils/constants";
+
 export interface Psychologist {
     id: string;
     name: string;
@@ -24,3 +26,5 @@ export interface ModalProps {
     children: React.ReactNode;
     onClose: () => void;
 }
+
+export type PsychologistFilterOption = typeof PSYCHOLOGIST_FILTERS[keyof typeof PSYCHOLOGIST_FILTERS];

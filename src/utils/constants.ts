@@ -1,5 +1,7 @@
 import type { Theme } from "../types/psychologist";
 
+export const DB_ROOT = import.meta.env.VITE_FIREBASE_DB_ROOT;
+
 export const themes: { id: Theme; color: string }[] = [
     { id: "green", color: "#54be96" },
     { id: "blue", color: "#3470ff" },
@@ -26,4 +28,14 @@ export const timeSlots = [
   "17:00",
 ];
 
-export const DB_ROOT = import.meta.env.VITE_FIREBASE_DB_ROOT;
+export const PSYCHOLOGIST_FILTERS = {
+  SHOW_ALL: "Show all",
+  A_TO_Z: "A to Z",
+  Z_TO_A: "Z to A",
+  PRICE_LESS_THAN_10: "Less than 10$",
+  PRICE_GREATER_THAN_10: "Greater than 10$",
+  POPULAR: "Popular",
+  NOT_POPULAR: "Not popular",
+} as const;
+
+export const ITEMS_PER_PAGE = 3;

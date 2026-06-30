@@ -1,11 +1,11 @@
 import { Link } from "react-router-dom";
 import heroImage from "../../assets/images/woman.png";
 import {
-  CheckIcon,
   PeoplesIcon,
   QuestionMarkIcon,
   UpRightArrowIcon,
 } from "../../assets/icons";
+import { FaCheck } from "react-icons/fa";
 import clsx from "clsx";
 import css from "./Hero.module.css";
 
@@ -46,7 +46,7 @@ export const Hero = () => {
 
         <div className={clsx(css.avatar, css.experienceCheck)}>
           <div className={css.checkIconWrapper}>
-            <CheckIcon />
+            <FaCheck size={20} />
           </div>
 
           <div className={css.textWrapper}>

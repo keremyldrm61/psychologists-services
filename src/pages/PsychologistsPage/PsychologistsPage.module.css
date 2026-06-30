@@ -1,0 +1,47 @@
+.section {
+    padding: 64px 0;
+    background-color: var(--color-background);
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 1184px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.loadMoreButton {
+    align-self: center;
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    border: none;
+    border-radius: 30px;
+    padding: 14px 48px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.25;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 32px;
+}
+
+.loadMoreButton:hover {
+    background-color: var(--color-primary-hover);
+}
+
+@media screen and (max-width: 768px) {
+    .section {
+        padding: 40px 0;
+    }
+
+    .list {
+        gap: 20px;
+    }
+}

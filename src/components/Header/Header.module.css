@@ -101,11 +101,10 @@
     width: 40px;
     height: 40px;
     border-radius: 10px;
-    background-color: var(--color-secondary);
+    background-color: var(--color-primary);
     display: flex;
     justify-content: center;
     align-items: center;
-    color: var(--color-primary);
 }
 
 .userName {

@@ -116,7 +116,7 @@ export const AppointmentForm = ({
           <div className={css.inputWrapper}>
             <input
               type="tel"
-              placeholder="+380998887766"
+              placeholder="+380"
               className={css.input}
               {...register("phone")}
             />

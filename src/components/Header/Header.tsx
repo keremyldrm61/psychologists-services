@@ -1,7 +1,8 @@
 import { useState } from "react";
 import { useAuth } from "../../hooks/useAuth";
 import { Link } from "react-router-dom";
-import { FaBars, FaTimes, FaUser } from "react-icons/fa";
+import { FaBars, FaTimes } from "react-icons/fa";
+import { UserIcon } from "../../assets/icons";
 import { Navigation } from "../Navigation/Navigation";
 import { useModal } from "../../hooks/useModal";
 import { LoginForm } from "../LoginForm/LoginForm";
@@ -67,7 +68,7 @@ export const Header = () => {
             <div className={css.userContainer}>
               <div className={css.userInfo}>
                 <div className={css.userAvatar}>
-                  <FaUser size={20} />
+                  <UserIcon />
                 </div>
                 <span className={css.userName}>{currentUser.displayName}</span>
               </div>

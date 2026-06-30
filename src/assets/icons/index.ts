@@ -4,7 +4,6 @@ import ClockIcon from "./clock-icon.svg?react";
 import CloseIcon from "./close-icon.svg?react";
 import EyeIcon from "./eye-icon.svg?react";
 import EyeOffIcon from "./eye-off-icon.svg?react";
-import CheckIcon from "./orange-tick-icon.svg?react";
 import PeoplesIcon from "./peoples-icon.svg?react";
 import QuestionMarkIcon from "./question-mark-icon.svg?react";
 import UpRightArrowIcon from "./up-right-arrow-icon.svg?react";
@@ -17,7 +16,6 @@ export {
   CloseIcon,
   EyeIcon,
   EyeOffIcon,
-  CheckIcon,
   PeoplesIcon,
   QuestionMarkIcon,
   UpRightArrowIcon,

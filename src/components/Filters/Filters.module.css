@@ -1,0 +1,94 @@
+.filtersContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 32px;
+}
+
+.label {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.29;
+  color: #8a8a89;
+}
+
+.selectWrapper {
+  position: relative;
+  width: 226px;
+  font-family: var(--font-family);
+}
+
+.triggerButton {
+  width: 100%;
+  background-color: var(--color-primary);
+  color: #fff;
+  border: none;
+  border-radius: 14px;
+  padding: 14px 18px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.25;
+  cursor: pointer;
+  outline: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color var(--transition);
+}
+
+.triggerButton:hover {
+  background-color: var(--color-primary-hover);
+}
+
+.chevron {
+  transition: transform var(--transition);
+}
+
+.chevronOpen {
+  transform: rotate(180deg);
+}
+
+.dropdownMenu {
+  position: absolute;
+  top: calc(100% + 4px);
+  left: 0;
+  width: 100%;
+  background-color: var(--color-white);
+  border-radius: 14px;
+  box-shadow: 0 20px 69px 0 rgba(0, 0, 0, 0.07);
+  padding: 8px 0;
+  z-index: 100;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.option {
+  padding: 8px 18px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  color: var(--color-text);
+  opacity: 0.5;
+  cursor: pointer;
+  transition:
+    color var(--transition),
+    background-color var(--transition);
+}
+
+.option:hover {
+  color: var(--color-text);
+  opacity: 1;
+  background-color: var(--color-secondary);
+}
+
+.selectedOption {
+  color: var(--color-text);
+  font-weight: 500;
+}
+
+@media screen and (max-width: 320px) {
+  .selectWrapper {
+    width: 100%;
+  }
+}
